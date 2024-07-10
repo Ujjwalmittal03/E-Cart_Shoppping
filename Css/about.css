@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+/* Navigation Bar Styles */
+.nav {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between; /* This pushes .nav-left and .nav-right to opposite ends */
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    -webkit-box-shadow: 3.5px 3px 16px -2px #e8e7e7;
+    -moz-box-shadow: 3.5px 3px 16px -2px #e8e7e7;
+    box-shadow: 3.5px 3px 16px -2px #e8e7e7;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul, li {
+    display: inline;
+    padding: 20px;
+}
+
+button {
+    float: right;
+}  
+
+a.ac {
+    background-color: blue;
+    color: beige;
+    padding: 18px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+a:hover {
+    color:black;
+    font-weight: bold;
+}
+
+button {
+    float: right;
+}
+
+.inp {
+    padding: 3px 40px;
+    border: 2px solid rgb(215, 233, 250);
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 2px 3px;
+    box-shadow: 7px 7px 7px grey;
+    margin-right:-4px;
+}
+
+.search_bar {
+    margin-left:auto;
+}
+
+.why {
+    /* background-color: rgb(114, 107, 255); */
+    width: 100%;
+    height: 280px;
+    margin-top: auto;
+    /* display: inline-flex; */
+    padding: 10px;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh; /* Full viewport height */
+    margin-top: 20px; /* Reduced from 180px */
+    margin-bottom: 20px; /* Reduced from 55px */
+    padding: 10px; /* Adjust if necessary */
+
+}
+
+.free {
+    background-color: rgb(255, 48, 103);
+    width: 300px;
+    height: 200px;
+    color: aliceblue;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding-top: 10px;
+    padding-left: 18px;
+    position: relative;
+    bottom: 60px;
+    box-shadow: 10px 10px 10px rgba(173, 165, 255, 0.549);
+
+}
+
+.Fast {
+    background-color: rgb(255, 48, 103);
+    width: 300px;
+    height: 200px;
+    color: aliceblue;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding-top: 10px;
+    padding-left: 18px;
+    position: relative;
+    bottom: 60px;
+    box-shadow: 10px 10px 10px rgba(173, 165, 255, 0.549);
+
+}
+
+.Best {
+    background-color: rgb(255, 48, 103);
+    width: 300px;
+    height: 200px;
+    position: relative;
+    bottom: 60px;
+    color: aliceblue;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding-top: 10px;
+    padding-left: 18px;
+    box-shadow: 10px 10px 10px rgba(173, 165, 255, 0.549);
+
+}
+
+.psd {
+    margin-left: auto;
+    display: flex;
+    margin-left: auto; /* Center the content if it makes sense */
+    margin-right: auto; /* Center the content if it makes sense */
+    display: flex;
+    justify-content: space-around; /* This helps in evenly spacing the cards */
+    align-items: center;
+    margin: auto; /* Centers the content and removes any unwanted margin */
+
+}
+
+.smedias{
+    font-size: 30px;
+}
+.blaa{
+    color: aliceblue;
+}
+.blaa:hover{
+    color: aqua;
+}
+
+/* Footer styles */
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 20px 30px;
+    color: aliceblue;
+    background-color: black;
+}
+.footer-secondary {
+    width: 40%;
+    display: flex;
+}
+.address{
+    width: 50%;
+    /* padding-left: 10px; */
+    /* background-color: rgb(182, 182, 194); */
+}
+.imgl{
+    width: 200px;
+    background: white;
+}
+.menu{
+    width: 50%;
+    /* background-color: rgb(119, 119, 122); */
+}
+.account{
+    width: 20%;
+    /* background-color: blue; */
+}
+.footer1{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    padding-top: 14px;
+}
+.menu1 a{
+    color: white;
+}
+.acc1 a{
+    color: white;
+}
+.acc1 a:hover{
+    color: white;
+}
+@media only screen and (max-width: 600px)  {
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .footer-secondary, .address {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-secondary {
+        margin-bottom: 40px;
+    }
+}
+
+/* Base styles for the cards */
+
+.psd {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%; /* Adjust as needed */
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto;
+    margin-left: auto; /* Center the content if it makes sense */
+    margin-right: auto; /* Center the content if it makes sense */
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    background: linear-gradient(145deg, #0093E9, #80D0C7);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px; 
+}
+
+/* Vibrant gradient backgrounds */
+.Fast {
+    background: linear-gradient(145deg, #ff2e69, #FBC638);
+}
+
+.free {
+    background: linear-gradient(145deg, #34e89e, #0f3443);
+}
+
+.Best {
+    background: linear-gradient(145deg, #6DD5FA, #FF758C);
+}
+
+/* Hover effect for cards with animation */
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover h1, .card:hover p {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+/* Additional styling for text */
+.card h1 {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card p {
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
